@@ -7,7 +7,7 @@ import { Geolocation, Position } from '@capacitor/geolocation';
   styleUrls: ['./geolocalizacion.page.scss'],
 })
 export class GeolocalizacionPage implements OnInit {
-  public map: google.maps.Map;
+  public map: google.maps.Map = {} as google.maps.Map;
 
   constructor() { }
 
