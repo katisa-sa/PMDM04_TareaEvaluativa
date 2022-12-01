@@ -28,7 +28,7 @@ export class GestionStorageService {
   // A partir de su clave obtiene un objeto almacenado en local
   // Antes de devolverlo, debe ser convertido de formato JSON a formato normal
   async getObject(key: string): Promise<{ value: string }> {
-    const ret = await Preferences.get({ key });
+    const ret: any = await Preferences.get({ key });
     return ret;
   }
   
