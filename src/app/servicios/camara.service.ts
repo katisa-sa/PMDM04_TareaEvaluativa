@@ -65,7 +65,7 @@ export class CamaraService {
 
   }
 
-  private async savePicture(image) {
+  private async savePicture(image: any) {
 
     let base64Data = image.base64String;
     // Guarda el fichero
