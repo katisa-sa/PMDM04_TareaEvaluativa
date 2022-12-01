@@ -9,7 +9,7 @@ import { CamaraService } from 'src/app/servicios/camara.service';
 })
 export class CamaraPage implements OnInit {
 
-  url: string = "";
+  url: any = "";
 
   constructor(public camaraFotos: CamaraService) { }
 
