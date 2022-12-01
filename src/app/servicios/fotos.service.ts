@@ -64,7 +64,7 @@ export class FotosService {
 
     // En los dispositivos móviles las fotos se guardan por defecto y tenemos el path físico y el webpath para visualizar
     // En el navegador hay que guardar la imagen en un fichero y se almacena su path y su URL en el array
-    let imagenGuardada: IFoto; ;
+    let imagenGuardada: any;
 
     if (!this.plataforma.is("hybrid")) {
       imagenGuardada = await this.savePicture(foto);
