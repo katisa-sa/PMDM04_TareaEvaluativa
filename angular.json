@@ -96,7 +96,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/swiper/swiper-bundle.min.css"
+            ],
             "scripts": [],
             "assets": [
               {
@@ -148,7 +151,8 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-    ]
+    ],
+    "analytics": false
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
