@@ -9,7 +9,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 @NgModule({
   declarations: [PageHeaderComponent],
   imports: [
-    CommonModule, IonicModule
+    CommonModule, 
+    IonicModule
   ],
   exports: [PageHeaderComponent]
 })

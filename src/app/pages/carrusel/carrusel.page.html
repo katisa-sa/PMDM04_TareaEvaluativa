@@ -1,14 +1,15 @@
 <app-page-header titulo="Carrusel"></app-page-header>
 
-<ion-content>
-    <ion-slides [options]="options">
-        <ion-slide *ngFor="let imagen of usarCamara.getListaUrl(); index as position">
-          <ion-card>
-            <ion-img [src]="imagen"></ion-img>
-            <ion-card-header>
-              <ion-card-title>Foto {{position}}</ion-card-title>
-            </ion-card-header>
-          </ion-card>      
-        </ion-slide>
-      </ion-slides>
+<ion-content >
+  <div class="swiper">
+    <div class="swiper-slide" *ngFor="let imagen of usarCamara.getListaUrl(); index as position">
+      <ion-card>
+        <ion-img [src]="imagen"></ion-img>
+        <ion-card-header>
+          <ion-card-title>Foto {{ position + 1 }}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
+
